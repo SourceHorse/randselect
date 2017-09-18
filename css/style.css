@@ -10,7 +10,7 @@ body * {
   display: grid;
   max-width: 350px;
   margin: auto;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-auto-rows: minmax(0px, auto);
 }
 .shell .array {
@@ -44,8 +44,58 @@ body * {
   grid-row: 1 / 3;
   overflow: hidden;
 }
-.shell .x {
+.shell .form {
+  grid-column: 1 / 8;
   grid-row: 3;
+  margin: auto;
+}
+.shell .checkbox {
+  grid-column: 1 / 8;
+  grid-row: 4;
+  margin: auto;
+  color: orange;
+  margin-top: -18px;
+}
+.shell .main-btn {
+  grid-column: 1 / 8;
+  grid-row: 5;
+  margin: auto;
+}
+.shell #output {
+  grid-column: 1 / 8;
+  grid-row: 6;
+  margin: auto;
+}
+
+#output {
+  color: blue;
+  font-size: 60px;
+}
+
+.btn-big {
+  background-color: black;
+  cursor: pointer;
+  font-size: 30px;
+  color: orange;
+  padding: 10px;
+  border-style: solid;
+  border-color: orange;
+  border-radius: 30px;
+  border-width: 2px;
+}
+.btn-big:hover {
+  background-color: orange;
+  color: black;
+}
+
+.controls {
+  background-color: black;
+  border: none;
+  color: orange;
+  font-size: 30px;
+}
+.controls:hover {
+  text-shadow: 0px 0px 10px white;
 }
 
 .collapse {
