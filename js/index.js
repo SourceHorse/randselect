@@ -41,3 +41,11 @@ function testForm() {
     $('#formtest').text('false');
   }
 }
+function expandCollapse() {
+  $('#field1').toggleClass('collapse expand');
+  if ($('#field1').hasClass('collapse')) {
+    $('#exp-btn').html('<i class = "fa fa-chevron-down"></i>');
+  } else {
+    $('#exp-btn').html('<i class = "fa fa-chevron-up"></i>');
+  }
+}
