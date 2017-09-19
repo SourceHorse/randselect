@@ -32,12 +32,12 @@ body * {
   padding: 10px;
   border-style: solid;
   border-radius: 30px;
-  border-color: orange;
+  border-color: grey;
 }
 .shell .border {
   padding: 0px;
   border-style: solid;
-  border-color: orange;
+  border-color: grey;
   border-radius: 30px;
   border-width: 2px;
   grid-column: 1 / 8;
@@ -60,17 +60,27 @@ body * {
   grid-column: 1 / 8;
   grid-row: 5;
   margin: auto;
+  height: 80px;
 }
 .shell #output {
   grid-column: 1 / 8;
   grid-row: 6;
   margin: auto;
 }
+.shell #spinner {
+  font-size: 40px;
+  color: white;
+  height: 120px;
+  grid-column: 1 / 8;
+  grid-row: 6;
+  margin: auto;
+}
 
 #output {
-  color: blue;
+  color: white;
   font-size: 60px;
 }
+
 .btn-big {
   background-color: black;
   cursor: pointer;
